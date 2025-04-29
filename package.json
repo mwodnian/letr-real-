@@ -1,0 +1,11 @@
+{
+  "name": "lotr",
+  "version": "1.0.0",
+  "description": "lotr quest log",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC"
+}

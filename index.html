@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Middle-earth Quest Log</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Middle-earth Quest Log</h1>
+      <h2>Your Journey Awaits:</h2>
+      <ul class="instructions">
+        <li>
+          Add new quests by writing them in the scroll below and pressing the "Add Quest" button
+        </li>
+        <li>
+          The "[ Complete ]" link marks a quest as finished (style = strike-through)
+        </li>
+        <li>The "[ Abandon ]" link removes a quest from your log</li>
+        <li>
+          May your quests be as legendary as the Fellowship's journey
+        </li>
+      </ul>
+      <h3>Record Your Quests Here:</h3>
+      <div class="quest-input">
+        <input
+          id="js-todo-create-text"
+          type="text"
+          name="todo-text"
+          placeholder="Enter your quest..."
+        />
+        <button id="js-todo-create" type="button">Add Quest</button>
+      </div>
+      <hr class="divider" />
+      <ul id="js-todo-entries">        
+        <li>
+          Destroy the One Ring
+          <a
+            class="js-todo-entry-done"
+            href="javascript:void(0);"
+            title="Mark this quest as complete"
+            >[ Complete ]</a
+          ><a
+            class="js-todo-entry-remove"
+            href="javascript:void(0);"
+            title="Abandon this quest"
+            >[ Abandon ]</a
+          >
+        </li>
+      </ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
